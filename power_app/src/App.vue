@@ -1,16 +1,22 @@
 <template>
   <div id="app">
+    <MyNav></MyNav>
     <Hud></Hud>
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
 import Hud from './components/Hud.vue'
+import MyNav from './components/MyNav.vue'
+import Footer from './components/Footer.vue'
 
 export default {
   name: 'app',
   components: {
-    Hud
+    Hud,
+    MyNav,
+    Footer
   }
 }
 </script>
@@ -22,6 +28,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
