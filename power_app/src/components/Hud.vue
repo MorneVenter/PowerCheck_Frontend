@@ -47,7 +47,7 @@
         getDataMorne() {
           this.morne_units = "Loading ...";
           axios
-            .get('http://51.136.30.25:3000/morne')
+            .get('https://51.136.30.25:3000/morne')
             .then(res => {
               this.morne_units = res.data[0];
             })
@@ -55,7 +55,7 @@
         getDataArno() {
           this.arno_units = "Loading ...";
           axios
-            .get('http://51.136.30.25:3000/arno')
+            .get('https://51.136.30.25:3000/arno')
             .then(res => {
               this.arno_units = res.data[0];
             });
